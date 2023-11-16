@@ -1,14 +1,21 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavBar from "./Components/NavBar"
-import CenterContainer from './Components/CenterContainer';
-
+import { Container } from 'react-bootstrap';
+import Navigation from './Components/Navigation'
+import { Button } from 'react-bootstrap';
 
 function App() {
   return (
-  <>
-    <NavBar />
-    <CenterContainer />
+    <>
+  <Navigation />
+  <div className="main-content">
+    <Container>
+      <h1>Welcome to bri</h1>
+      <Button variant='dark'>
+        Get Started
+      </Button>
+    </Container>
+  </div>
   </>
   );
 }
