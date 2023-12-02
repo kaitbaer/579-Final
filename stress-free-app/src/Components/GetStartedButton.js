@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const GetStartedButton = () => {    
     return(
-        <Link to='/next'>
+        <Link to='/choosescape'>
             <Button>
                 Get Started
             </Button>

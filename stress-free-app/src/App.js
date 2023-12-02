@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './Components/Home';
-import Next from './Components/Next';
+import ChooseScape from './Components/ChooseScape';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route index element={<Home />}/> 
           <Route path='/home' element={<Home/>}/>
-          <Route path='/next' element={<Next />}/>
+          <Route path='/choosescape' element={<ChooseScape />}/>
         </Routes>
       </BrowserRouter>
     </div>
