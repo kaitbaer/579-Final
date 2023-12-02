@@ -1,23 +1,21 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container } from 'react-bootstrap';
-import Navigation from './Components/Navigation'
-import { Button } from 'react-bootstrap';
+import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import Home from './Components/Home';
+import Next from './Components/Next';
 
 function App() {
   return (
-    <>
-  <Navigation />
-  <div className="main-content">
-    <Container>
-      <h1>Welcome to bri</h1>
-      <Button variant='dark'>
-        Get Started
-      </Button>
-    </Container>
-  </div>
-  </>
-  );
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />}/> 
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/next' element={<Next />}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
 }
 
 export default App;
