@@ -14,27 +14,27 @@ const ChooseSound = () => {
         <Navigation />
         <div className="main-content">
             <Container>
-                <h1>Now, choose which sound you would like</h1>
+                <h1>Now, choose a sound for your relaxation period</h1>
                 <Row xs={5} className='p-5'>
                     <Col xs={4}>
-                        <Button variant='light' size='lg' active={active1} onClick={(e) => setActive1('true') && setSound('white noise')}>
+                        <Button variant='outline-dark' size='lg' active={active1} onClick={(e) => setActive1('true') && setSound('white noise')}>
                             White Noise
                         </Button>
                     </Col>
                     <Col xs={4}>
-                    <Button variant='light' size='lg' active={active2} onClick={() => setActive2('true') && setSound('rain')}>
+                    <Button variant='outline-dark' size='lg' active={active2} onClick={() => setActive2('true') && setSound('rain')}>
                             Rain
                     </Button>
                     </Col>
                     <Col xs={4}>
-                    <Button variant='light' size='lg' active={active3} onClick={() => setActive3('true') && setSound('piano')}>
+                    <Button variant='outline-dark' size='lg' active={active3} onClick={() => setActive3('true') && setSound('piano')}>
                             Piano
                     </Button>
                     </Col>
                 </Row>
                 <Row>
-                    <Link to='/timer'> 
-                    <Button>
+                    <Link to='/chooseduration'> 
+                    <Button variant="outline-dark" className="m-5">
                         Next
                     </Button>
                     </Link>

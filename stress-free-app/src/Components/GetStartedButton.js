@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const GetStartedButton = () => {    
     return(
         <Link to='/choosescape'>
-            <Button>
+            <Button variant="outline-dark">
                 Set up Space
             </Button>
         </Link>

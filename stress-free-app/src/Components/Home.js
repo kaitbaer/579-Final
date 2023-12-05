@@ -8,7 +8,7 @@ const Home = () => {
   <Navigation />
   <div className="main-content">
     <Container>
-      <h1>Welcome to bri</h1>
+      <h1>Welcome to BRĒ</h1>
       <GetStartedButton />
     </Container>
   </div>

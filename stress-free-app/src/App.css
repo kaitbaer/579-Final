@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.bg-custom1 {
+  background-color: #3a4037ff!important;
+}
 
 .main-content{
   display: flex;
