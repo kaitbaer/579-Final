@@ -6,8 +6,7 @@
   display: flex;
   height: 75vh;
   width: 75%;
-  background: rgb(238,174,202);
-  background: linear-gradient(250deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 36%, rgba(178,212,201,1) 88%);
+  background: #d9ccc1ff;
   color:black;
   align-items: center;
   margin: auto;

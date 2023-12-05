@@ -5,7 +5,7 @@ const GetStartedButton = () => {
     return(
         <Link to='/choosescape'>
             <Button>
-                Get Started
+                Set up Space
             </Button>
         </Link>
     )

@@ -6,6 +6,7 @@ import { Button } from "react-bootstrap";
 import mountain from "../Images/Mountains.jpg";
 import forrest from "../Images/Forrest.jpg";
 import river from "../Images/River.jpg";
+import { Link } from "react-router-dom";
 
 const ChooseScape = () => {
     return (
@@ -44,7 +45,9 @@ const ChooseScape = () => {
                         </Col>
                 </Row>
                 <Row xs={4}>
+                    <Link to='/choosesound'>
                     <Button className="" variant="primary">Select</Button>
+                    </Link>
                 </Row>
             </Container>
         </div>

@@ -3,7 +3,7 @@ import { Navbar } from 'react-bootstrap';
 
 const Navigation = () => {
     return (
-    <>
+      <>
         <Navbar className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="/home">Home</Navbar.Brand>
@@ -13,7 +13,7 @@ const Navigation = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+      </>
     )
 }
 export default Navigation;
