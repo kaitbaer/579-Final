@@ -6,7 +6,7 @@ const StressSpace = () => {
   <>
   <Navigation />
   <div className="main">
-    <video autoPlay muted loop><source src={fv} type="video/mp4"/></video>
+    <video autoPlay muted loop><source src={"../Images/forrestvideo.mp4"} type="video/mp4"/></video>
       <div className="hover-text"> 
       <Timer />
       </div>
