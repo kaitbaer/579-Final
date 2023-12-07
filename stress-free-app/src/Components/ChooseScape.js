@@ -13,7 +13,7 @@ const ChooseScape = () => {
     const [durationActive1, setDurationActive1] = useState(false)
     const [durationActive2, setDurationActive2] = useState(false)
     const [durationActive3, setDurationActive3] = useState(false)
-
+    const [scape, setScape] = useState('')
 
     return (
         <>
@@ -27,7 +27,7 @@ const ChooseScape = () => {
                             <Card.Img variant="top" src={mountain} />
                             <Card.Body>
                             <Card.Title>Mountains</Card.Title>
-                            <Button active={durationActive1} onClick={(e) => setDurationActive1('true')} variant="outline-dark">Select</Button>
+                            <Button active={durationActive1} onClick={(e) => {setDurationActive1('true'); setScape('.../Images/mountainsvideo.mp4"')}} variant="outline-dark">Select</Button>
                             </Card.Body>
                         </Card>
                         </Col>
@@ -36,7 +36,7 @@ const ChooseScape = () => {
                             <Card.Img variant="top" src={forrest} />
                             <Card.Body>
                             <Card.Title>Forrest</Card.Title>
-                            <Button active={durationActive2} onClick={(e) => setDurationActive2('true')} variant="outline-dark">Select</Button>
+                            <Button active={durationActive2} onClick={(e) => {setDurationActive2('true'); setScape("../Images/forrestvideo.mp4")}} variant="outline-dark">Select</Button>
                             </Card.Body>
                         </Card>
                         </Col>
@@ -45,7 +45,7 @@ const ChooseScape = () => {
                             <Card.Img variant="top" src={river} />
                             <Card.Body>
                             <Card.Title>River</Card.Title>
-                            <Button active={durationActive3} onClick={(e) => setDurationActive3('true')} variant="outline-dark">Select</Button>
+                            <Button active={durationActive3} onClick={(e) => {setDurationActive3('true'); setScape("..Images/rivervideo.mp4")}} variant="outline-dark">Select</Button>
                             </Card.Body>
                         </Card>
                         </Col>

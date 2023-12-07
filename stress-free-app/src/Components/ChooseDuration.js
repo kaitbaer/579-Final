@@ -7,7 +7,7 @@ const ChooseDuration = () => {
     const [timerActive1, setTimerActive1] = useState(false)
     const [timerActive2, setTimerActive2] = useState(false)
     const [timerActive3, setTimerActive3] = useState(false)
-    const [countdown, setCountdown] = useState('')
+    const [countdown, setCountdown] = useState(0)
     
 
     return (
@@ -18,17 +18,17 @@ const ChooseDuration = () => {
                 <h1>Finally, Choose your Stress Time-out Duration</h1>
                 <Row xs={5} className='p-5'>
                     <Col xs={4}>
-                        <Button variant='outline-dark' size='lg' active={timerActive1} onClick={(e) => setTimerActive1('true') && setCountdown('2')}>
+                        <Button variant='outline-dark' size='lg' active={timerActive1} onClick={(e) => {setTimerActive1('true'); setCountdown(60000)}}>
                             2 minutes
                         </Button>
                     </Col>
                     <Col xs={4}>
-                    <Button variant='outline-dark' size='lg' active={timerActive2} onClick={() => setTimerActive2('true') && setCountdown('5')}>
+                    <Button variant='outline-dark' size='lg' active={timerActive2} onClick={() => setTimerActive2('true') && setCountdown(300000)}>
                             5 minutes
                     </Button>
                     </Col>
                     <Col xs={4}>
-                    <Button variant='outline-dark' size='lg' active={timerActive3} onClick={() => setTimerActive3('true') && setCountdown('10')}>
+                    <Button variant='outline-dark' size='lg' active={timerActive3} onClick={() => setTimerActive3('true') && setCountdown(600000)}>
                             10 minutes
                     </Button>
                     </Col>

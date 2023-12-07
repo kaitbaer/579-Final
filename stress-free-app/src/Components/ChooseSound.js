@@ -17,17 +17,17 @@ const ChooseSound = () => {
                 <h1>Now, choose a sound for your relaxation period</h1>
                 <Row xs={5} className='p-5'>
                     <Col xs={4}>
-                        <Button variant='outline-dark' size='lg' active={active1} onClick={(e) => setActive1('true') && setSound('white noise')}>
+                        <Button variant='outline-dark' size='lg' active={active1} onClick={(e) => {setActive1('true'); setSound('white noise')}}>
                             White Noise
                         </Button>
                     </Col>
                     <Col xs={4}>
-                    <Button variant='outline-dark' size='lg' active={active2} onClick={() => setActive2('true') && setSound('rain')}>
+                    <Button variant='outline-dark' size='lg' active={active2} onClick={() => {setActive2('true'); setSound('rain')}}>
                             Rain
                     </Button>
                     </Col>
                     <Col xs={4}>
-                    <Button variant='outline-dark' size='lg' active={active3} onClick={() => setActive3('true') && setSound('piano')}>
+                    <Button variant='outline-dark' size='lg' active={active3} onClick={() => {setActive3('true'); setSound('piano')}}>
                             Piano
                     </Button>
                     </Col>
