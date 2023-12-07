@@ -16,7 +16,7 @@ const Timer = (props) => {
         autoStart={false}
         ref={timerStarter}
         />
-        <Button variant="outline-dark" onClick={handleClick}>
+        <Button variant="light" onClick={handleClick}>
             Start
         </Button>
         </div>

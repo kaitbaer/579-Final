@@ -1,16 +1,17 @@
 import Navigation from "./Navigation";
 import Timer from "./Timer";
+import fv from '../Images/forrestvideo.mp4'
 
 const StressSpace = () => {
   return (
   <>
   <Navigation />
   <div className="main">
-    <video autoPlay muted loop><source src={"../Images/forrestvideo.mp4"} type="video/mp4"/></video>
+    <video autoPlay muted loop><source src={fv} type="video/mp4"/></video>
       <div className="hover-text"> 
       <Timer />
       </div>
-      <div>
+      <div className="hover-sound">
         <iframe style={{borderRadius:12}} title="spotifyplaylistembed"
             src="https://open.spotify.com/embed/track/7bJAQD5AAq9zxQz1nal7tp?utm_source=generator" 
             width="50%" height="152" frameBorder="0" allowFullScreen="" 
